@@ -1,0 +1,53 @@
+// fonts
+body {
+  // 中間有空白的字體請用雙括號包住
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  font-size: $font-size-base;
+}
+
+.h2 {
+  font-size: $font-size-base * 4; // 64
+}
+.h3 {
+  font-size: $font-size-base * 3; // 48
+}
+.h4 {
+  font-size: $font-size-base * 2.25; //36
+}
+.h5 {
+  font-size: $font-size-base * 1.5; //24
+}
+.h6 {
+  font-size: $font-size-base * 1.25; // 20
+}
+
+.font-weight {
+  &-regular {
+    font-weight: $font-weight-regular;
+  }
+  &-medium {
+    font-weight: $font-weight-medium;
+  }
+  &-bold {
+    font-weight: $font-weight-bold;
+  }
+  &-black {
+    font-weight: $font-weight-black;
+  }
+}
+
+
+.text-italic {
+  font-style: italic;
+}
+.text-center {
+  text-align: center;
+}
+
+.text-dark {
+  color: $text-dark;
+}
+.text-light {
+  color: $text-light;
+}

@@ -1,23 +1,14 @@
-$color: #00cc99;
+@import "helpers/variables";
+@import "layout/breakpoints";
+@import "base/base";
 
-.header {
-  height: 200px;
-  background-color: #00cc99;
-}
+@import "helpers/utilities";
+@import "helpers/text";
+@import "helpers/spacing";
+@import "helpers/mixins";
+@import "helpers/sizing";
+@import "helpers/background";
 
-.footer {
-  height: 200px;
-  background-color: #00cc99;
-}
 
-.box {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  transition: all 0.5s;
-  &:hover {
-    width: 200px;
-    background-color: $color;
-  }
-}
+@import "layout/header";
+@import "layout/footer";

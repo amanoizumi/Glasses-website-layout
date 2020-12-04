@@ -1,0 +1,101 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+// 字型： Noto Sans TC
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700&display=swap');
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+  font-size: $font-size-base;
+  font-family: $font-family-base;
+  font-weight: normal;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: $line-height-base;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+// base
+
+*,
+*::before,
+
+*::after {
+  box-sizing: border-box;
+}
+
+img { 
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+h1, .h1 {
+  font-size: $h1-font-size;
+  // @include pad{
+  //   font-size: 2.5rem;
+  // };
+  // @include mobile{
+  //   font-size: 2rem;
+  // };
+}
+
+
+/*
+1. container 寫在全站設定
+2. container 的 max-width 的單位不要用 % 數去寫，
+   因為如果 container 的大小一直隨著 % 數(瀏覽器伸縮) 改變，會造成使用者視覺上的疲累。
+   要改變的只有左右間距變大變小。
+*/
+.container {
+  max-width: 1140px;
+  padding: 0 15px;
+  margin: 0 auto;
+  @include lg-width {
+    max-width: 100%;
+    padding: 0 40px;
+  }
+  @include sm-width {
+    padding: 0 15px;
+  }
+}

@@ -10,16 +10,84 @@
 </head>
 
 <body>
-  <header class="header">
-    這是 header
-  </header>
+  <nav class="l-navbar d-flex bg-primary justify-space-between">
+    <div class="l-navbar-logo d-flex align-items-center">
+      <a href="index.html">
+        <h1>
+          Glasses
+        </h1>
+      </a>
+    </div>
+    <ul class="l-navbar-menu h6 d-flex mr-7">
+      <li><a href="frames.html">系列鏡框</a></li>
+      <li><a href="address.html">門市據點</a></li>
+      <li><a href="blog.html">部落格</a></li>
+      <li><a href="faq.html">常見問題</a></li>
+    </ul>
+  </nav>
 
   <%- contents %>
 
-  <footer class="footer">
-    footer
+  <footer class="l-footer text-light bg-primary">
+    <div class="container">
+      <div class="d-flex mb-4 justify-space-between align-items-center">
+        <ul class="l-footer-menu d-flex mr-7">
+          <li class="mr-6"><a href="index.html">首頁</a></li>
+          <li class="mr-6"><a href="frames.html">系列鏡框</a></li>
+          <li class="mr-6"><a href="address.html">門市據點</a></li>
+          <li class="mr-6"><a href="blog.html">部落格</a></li>
+          <li><a href="faq.html">常見問題</a></li>
+        </ul>
+        <ul class="d-flex">
+          <li class="mr-4">
+            <a href="#">
+              <img src="./assets/images/icon-fb.svg"
+                   alt="Facebook"
+                   title="Facebook">
+            </a>
+          </li>
+          <li class="mr-4">
+            <a href="#">
+              <img src="./assets/images/icon-ig.svg"
+                   alt="Instagram"
+                   title="Instagram">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./assets/images/icon-ling.svg"
+                   alt="Line" title="Line">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <ul class="l-footer-contact">
+        <li class="phone d-flex align-items-center">
+          <img class="icon-phone" src="https://raw.githubusercontent.com/amanoizumi/2020-autumn-hexschoollive-layout/6f2e93e2ce1295a5ec63854b7c5c812d75fee5f9/week3_4/app/assets/images/icon-phone.svg"
+               alt="phone">
+          <a class="h4" href="tel:+8860800000000">0800-000-000</a>
+        </li>
+        <li class="d-flex align-items-center">
+          <img class="icon-mail" src="https://raw.githubusercontent.com/amanoizumi/2020-autumn-hexschoollive-layout/6f2e93e2ce1295a5ec63854b7c5c812d75fee5f9/week3_4/app/assets/images/icon-mail.svg"
+               alt="mail">
+          <a class="h4" href="mailto:glasses@business.com">glasses@business.com</a>
+        </li>
+      </ul>
+      <div class="l-footer-copyright d-flex align-items-center">
+        <div>
+          <img class="l-footer-copyright-logo" src="https://github.com/amanoizumi/2020-autumn-hexschoollive-layout/blob/main/week3_4/app/assets/images/logo.png?raw=true" alt="" title="Glasses">
+        </div>
+        <div class="d-flex align-items-center">
+          <p class="m-y-5 mr-2">Copyright © 2020 Glasses.All rights reserved.</p>
+          <ul class="d-flex">
+            <li class="list-item"><a href="#">隱私權政策</a></li>
+            <li><a href="#">服務條款</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </footer>
-  <script src="./assets/js/vendors.js"></script>
+
   <script src="./assets/js/all.js"></script>
 </body>
 

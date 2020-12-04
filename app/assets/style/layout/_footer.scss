@@ -1,0 +1,40 @@
+.l-footer {
+  padding-top: 36px;
+  &-menu {
+    a {
+      display: block;
+      color: #ffffff;
+    }
+  }
+  &-contact {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+    a {
+      color: #ffffff;
+    }
+    .phone {
+      margin-bottom: 19px;
+    }
+    .icon-phone {
+      width: 44px;
+      height: 44px;
+      margin-right: 17px;
+    }
+    .icon-mail {
+      width: 48px;
+      height: 48px;
+      margin-right: 12px;
+    }
+  }
+  &-copyright {
+    a {
+      color: #ffffff;
+    }
+    .list-item {
+      margin-right: 62px;
+    }
+    &-logo {
+      margin-right: 38px;
+    }
+  }
+}

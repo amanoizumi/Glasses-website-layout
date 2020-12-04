@@ -1,0 +1,47 @@
+// spacing
+$spacing: 8px;
+
+// fonts
+
+$font-size-base: 1rem; //16px
+
+$font-size-sm: $font-size-base * 0.875; //14px
+
+$h1-font-size: $font-size-base * 4; //64px
+$h2-font-size: $font-size-base * 3; //48px
+$h3-font-size: $font-size-base * 1.75; //28px
+$h4-font-size: $font-size-base * 1.5; //24px
+$h5-font-size: $font-size-base * 1.25; //20px
+$h6-font-size: $font-size-base; //16px
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 900;
+
+$font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;;
+$en-font-family: 'Roboto',sans-serif;
+$tc-font-family: 'Noto Sans', sans-serif;
+
+$line-height-base: 1.5;
+
+// color
+$primary: #AA0601;
+$primary-dark: #650300;
+$primary-light: #AA06010D;
+
+$background-color-primary: $primary;
+$background-color-light: $primary-light;
+
+$text-dark: $primary-dark;
+$text-light: #FFFFFF;
+
+// grid
+$xl-width: 1200px;
+$lg-width: 992px; 
+$md-width: 768px;
+$sm-width: 568px; 
+$xs-width: 375px; 
+
+//navbar
+$navbarheight: 108px;

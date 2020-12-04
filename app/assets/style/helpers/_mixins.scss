@@ -1,0 +1,12 @@
+//h1圖片替代文字
+@mixin hide-text {
+  text-indent: 110%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@mixin bg-cover($background-url)  {
+  background-image: url($background-url);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
