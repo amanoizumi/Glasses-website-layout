@@ -1,24 +1,15 @@
 .navbar {
-  height: 108px;
   position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 0 56px;
-}
-.navbar-nav {
-  display: flex;
-
-}
-.nav-link {
-  font-size: $font-size-base * 1.25;
-  padding:0 32px;
-  color: #fff;
-}
-.navbar-logo {
-  background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png');
-  margin-left: 32px;
-  height: 48px;
-  width: 80px;
-  @include hide-text;
+  padding: 30px 56px;
+  &-nav {
+    display: flex;
+    .nav {
+      &-link {
+        padding:0 32px;
+      }
+    }
+  }
 }
