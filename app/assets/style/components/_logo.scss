@@ -1,7 +1,12 @@
 .logo {
-  background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png');
+  @include bg-cover('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png');
   margin-left: 32px;
   height: 48px;
   width: 80px;
   @include hide-text;
+  @include md-width {
+    margin-left: 0px;
+    height: 29.14px;
+    width: 48px;
+  }
 }

@@ -1,5 +1,8 @@
 .footer {
   padding-top: 36px;
+  @include lg-width {
+    padding-top: 40px;
+  }
   &-contact {
     padding-bottom: 20px;
     border-bottom: 1px solid #ffffff;
@@ -9,16 +12,7 @@
     .phone {
       margin-bottom: 19px;
     }
-    .icon-phone {
-      width: 44px;
-      height: 44px;
-      margin-right: 17px;
-    }
-    .icon-mail {
-      width: 48px;
-      height: 48px;
-      margin-right: 12px;
-    }
+    
   }
   &-copyright {
     a {
@@ -29,6 +23,25 @@
     }
     &-logo {
       margin-right: 38px;
+    }
+  }
+
+  .icon {
+    &-phone {
+      width: 44px;
+      height: 44px;
+      margin-right: 17px;
+    }
+    &-mail {
+      width: 48px;
+      height: 48px;
+      margin-right: 12px;
+    }
+    &-sns {
+      @include lg-width {
+        width: 24px;
+        height: 24px;
+      }
     }
   }
 }
