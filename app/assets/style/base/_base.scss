@@ -70,7 +70,9 @@ a {
   text-decoration: none;
 }
 
-
+.h1 {
+  font-size: $h1-font-size; // 48
+}
 .h2 {
   font-size: $h2-font-size; // 48
 }

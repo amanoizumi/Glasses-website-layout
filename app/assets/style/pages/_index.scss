@@ -1,0 +1,9 @@
+.header {
+  height: 840px;
+  background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true');
+  @include bg-cover;
+  @include md-width {
+    background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-sm.png?raw=true');
+    height: 394px;
+  }
+}
