@@ -97,6 +97,11 @@ h3, .h3 {
     font-size: 0.875rem;
   };
 }
+.fsz-sm-sm {
+  @include sm-width {
+    font-size: 0.875rem;
+  };
+}
 
 
 /*

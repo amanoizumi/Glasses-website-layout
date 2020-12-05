@@ -1,12 +1,8 @@
 .navbar {
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 30px 56px;
-  @include lg-width {
-    padding: 30px 0px;
-  }
+  padding: 0 56px;
   @include md-width {
     padding: 0;
   }
@@ -29,13 +25,15 @@
     .nav {
       &-link {
           font-size: $h5-font-size; // 20
-          padding:0 32px;
+          padding: 40px 32px;
           @include md-width {
-            padding: 8px 0;
+            display: block;
+            padding: 8px;
             text-align: center;
           }
       }
       &-item{
+        text-align: center;
         @include md-width {
           width: 50%;
           border: 1px solid #ffffff;

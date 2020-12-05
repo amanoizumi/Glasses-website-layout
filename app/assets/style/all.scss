@@ -7,10 +7,12 @@
 @import "helpers/spacing";
 @import "helpers/mixins";
 @import "helpers/sizing";
+@import "helpers/hover";
 @import "helpers/background";
 
 @import "components/logo";
 @import "components/nav";
 @import "components/navbar";
+@import "components/banner";
 
 @import "layout/footer";
