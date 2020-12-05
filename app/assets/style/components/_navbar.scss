@@ -28,6 +28,7 @@
     }
     .nav {
       &-link {
+          font-size: $h5-font-size; // 20
           padding:0 32px;
           @include md-width {
             padding: 8px 0;

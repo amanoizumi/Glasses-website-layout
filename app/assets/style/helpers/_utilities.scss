@@ -19,8 +19,14 @@
 .d-none {
   display: none;
 }
+
 .d-flex {
   display: flex;
+}
+.d-md-flex {
+  @include md-width {
+    display: flex;
+  }
 }
 
 
@@ -32,22 +38,45 @@
 .flex-column {
   flex-direction: column;
 }
+.flex-md-column {
+  @include md-width {
+    flex-direction: column;
+  }
+}
+.flex-sm-column {
+  @include sm-width {
+    flex-direction: column;
+  }
+}
 .flex-wrap {
   flex-wrap: wrap;
 }
+
 .flex-row-reverse {
   flex-direction: row-reverse;
+}
+.flex-md-row-reverse {
+  @include md-width {
+    flex-direction: row-reverse;
+  }
 }
 
 
 .justify-content-center {
   justify-content: center;
 }
+
 .justify-contend-end {
   justify-content: flex-end;
 }
 .justify-space-between {
   justify-content: space-between;
+}
+
+.justify-md-space-between {
+  @include md-width {
+    justify-content: space-between;
+  }
 }
 .align-items-center {
   align-items: center;
