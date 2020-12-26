@@ -1,11 +1,40 @@
-//h1圖片替代文字
+// h1圖片替代文字
 @mixin hide-text {
   text-indent: 110%;
   overflow: hidden;
   white-space: nowrap;
 }
+// 背景圖片
 @mixin bg-cover {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
+}
+
+// 斷點
+@mixin xl-width {
+  @media screen and (max-width: $xl-width) {
+      @content;
+    }
+}
+@mixin lg-width {
+  @media screen and (max-width: $lg-width) {
+    @content;
+  }
+}
+@mixin md-width {
+  @media screen and (max-width: $md-width) {
+    @content;
+  }
+}
+
+@mixin sm-width {
+  @media screen and (max-width: $sm-width) {
+    @content;
+  }
+}
+@mixin xs-width {
+  @media screen and (max-width: $xs-width) {
+    @content;
+  }
 }

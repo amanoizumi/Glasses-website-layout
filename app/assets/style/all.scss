@@ -1,5 +1,4 @@
 @import "helpers/variables";
-@import "layout/breakpoints";
 @import "base/base";
 
 @import "helpers/utilities";
@@ -10,10 +9,7 @@
 @import "helpers/hover";
 @import "helpers/background";
 
-@import "components/logo";
-@import "components/nav";
-@import "components/navbar";
-
 @import "layout/footer";
+@import "layout/nav";
 
 @import "pages/index";

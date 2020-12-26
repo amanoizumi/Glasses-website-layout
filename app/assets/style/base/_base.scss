@@ -70,38 +70,38 @@ a {
   text-decoration: none;
 }
 
-.h1 {
-  font-size: $h1-font-size; // 48
+h1, .fsz-4xl {
+  font-size: $fsz-4xl; // 64
 }
-.h2 {
-  font-size: $h2-font-size; // 48
+h2, .fsz-3xl {
+  font-size: $fsz-3xl; // 48
 }
-h3, .h3 {
-  font-size: $h3-font-size; // 36
+h3, .fsz-xxl {
+  font-size: $fsz-xxl; // 36
   @include lg-width {
-    font-size: 1.25rem;
+    font-size: $fsz-l;
   };
 }
-.h4 {
-  font-size: $h4-font-size; //24
+h4, .fsz-xl {
+  font-size: $fsz-xl; //24
 }
-.h5 {
-  font-size: $h5-font-size; //20
+h5, .fsz-l {
+  font-size: $fsz-l; //20
 }
-.h6 {
-  font-size: $h6-font-size; // 16
+h6, .fsz-m {
+  font-size: $fsz-m; // 16
 }
-.fsz-sm {
-  font-size: $font-size-sm; // 14
+.fsz-s {
+  font-size: $fsz-s; // 14
 }
-.fsz-md-sm {
+.fsz-md-s {
   @include md-width {
-    font-size: 0.875rem;
+    font-size: $fsz-s; // 14
   };
 }
-.fsz-sm-sm {
+.fsz-sm-s {
   @include sm-width {
-    font-size: 0.875rem;
+    font-size: $fsz-s; // 14
   };
 }
 
@@ -113,8 +113,7 @@ h3, .h3 {
    要改變的只有左右間距變大變小。
 */
 .container {
-  max-width: 1140px;
-  padding: 0 15px;
+  max-width: 1110px;
   margin: 0 auto;
   @include lg-width {
     max-width: 100%;

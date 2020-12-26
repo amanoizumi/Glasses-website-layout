@@ -1,3 +1,27 @@
+.nav {
+  font-size: $fsz-m; // 16
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 0;
+  margin-bottom: 0;
+  @include lg-width {
+    width: 65.217391%;
+    justify-content: space-around;
+  }
+  @include md-width {
+    display: none;
+  }
+  &-item {
+    @include lg-width {
+      margin-right: 0;
+    }
+  }
+  &-link {
+    color: #fff;
+  }
+}
+
 .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -7,7 +31,6 @@
     padding: 0;
   }
   &-logo {
-    
     @include md-width {
       width: 100%;
       height: 50px;
@@ -25,7 +48,7 @@
     }
     .nav {
       &-link {
-          font-size: $h5-font-size; // 20
+          font-size: $fsz-l; // 20
           padding: 40px 32px;
           @include md-width {
             display: block;
@@ -41,5 +64,20 @@
         }
       }
     }
+  }
+}
+
+.logo {
+  @include bg-cover;
+  margin-left: 32px;
+  height: 48px;
+  width: 80px;
+  @include hide-text;
+  @include lg-width {
+    margin-left: 0px;
+  }
+  @include md-width {
+    height: 29.14px;
+    width: 48px;
   }
 }
