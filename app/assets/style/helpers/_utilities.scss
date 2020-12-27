@@ -52,9 +52,16 @@
   flex-wrap: wrap;
 }
 
+
 .flex-row-reverse {
   flex-direction: row-reverse;
 }
+.flex-md-row {
+  @include md-width {
+    flex-direction: row;
+  }
+}
+
 .flex-md-row-reverse {
   @include md-width {
     flex-direction: row-reverse;
@@ -68,6 +75,11 @@
 
 .justify-content-end {
   justify-content: flex-end;
+}
+.justify-content-md-start {
+  @include md-width {
+    justify-content: flex-start;
+  }
 }
 .justify-space-between {
   justify-content: space-between;
@@ -86,4 +98,11 @@
 }
 .align-items-baseline {
   align-items: baseline;
+}
+
+/* order */
+.lg-order-first {
+  @include lg-width {
+    order: -1;
+  }
 }

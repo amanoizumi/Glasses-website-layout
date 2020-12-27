@@ -27,6 +27,11 @@
     @content;
   }
 }
+@mixin iPhone-width {  // iPhone 6/7/8(橫)
+  @media screen and (max-width: $iPhone-width) {
+    @content;
+  }
+}
 
 @mixin sm-width {
   @media screen and (max-width: $sm-width) {

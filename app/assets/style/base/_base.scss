@@ -78,9 +78,6 @@ h2, .fsz-3xl {
 }
 h3, .fsz-xxl {
   font-size: $fsz-xxl; // 36
-  @include lg-width {
-    font-size: $fsz-l;
-  };
 }
 h4, .fsz-xl {
   font-size: $fsz-xl; //24
@@ -91,20 +88,82 @@ h5, .fsz-l {
 h6, .fsz-m {
   font-size: $fsz-m; // 16
 }
+
+
 .fsz-s {
   font-size: $fsz-s; // 14
 }
-.fsz-md-s {
-  @include md-width {
-    font-size: $fsz-s; // 14
-  };
-}
-.fsz-sm-s {
-  @include sm-width {
-    font-size: $fsz-s; // 14
-  };
+
+// font size lg
+.fsz-lg {
+  &-3xl {
+    @include lg-width {
+      font-size: $fsz-3xl; // 48
+    };
+  }
+  &-28 {
+    @include lg-width {
+      font-size: 28px; // 客製化
+    };
+  }
+  &-l {
+    @include lg-width {
+      font-size: $fsz-l; // 20
+    };
+  }
 }
 
+// font size md
+.fsz-md {
+  &-3xl {
+    @include md-width {
+      font-size: $fsz-3xl; // 48
+    };
+  }
+  &-32 {
+    @include md-width {
+      font-size: 32px; // 客製化 32px
+    };
+  }
+  &-l {
+    @include md-width {
+      font-size: $fsz-l; // 20
+    };
+  }
+  &-s {
+    @include md-width {
+      font-size: $fsz-s; // 14
+    };
+  }
+}
+
+
+// font size sm
+.fsz-sm {
+  &-32 {
+    @include sm-width {
+      font-size: 32px; // 客製化 32px
+    };
+  }
+  &-xl {
+    @include sm-width {
+      font-size: $fsz-xl; // 24
+    };
+  }
+  &-m {
+    @include sm-width {
+      font-size: $fsz-m; // 16
+    };
+  }
+  &-s {
+    @include sm-width {
+      font-size: $fsz-s; // 14
+    };
+  }
+}
+
+
+// font size sm
 
 /*
 1. container 寫在全站設定
@@ -112,6 +171,7 @@ h6, .fsz-m {
    因為如果 container 的大小一直隨著 % 數(瀏覽器伸縮) 改變，會造成使用者視覺上的疲累。
    要改變的只有左右間距變大變小。
 */
+
 .container {
   max-width: 1110px;
   margin: 0 auto;

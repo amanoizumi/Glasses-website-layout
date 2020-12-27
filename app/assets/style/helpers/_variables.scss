@@ -35,6 +35,7 @@ $primary-light: #AA06010D;
 $background-color-primary: $primary;
 $background-color-light: $primary-light;
 
+$text-primary: $primary;
 $text-dark: $primary-dark;
 $text-light: #FFFFFF;
 
@@ -42,5 +43,6 @@ $text-light: #FFFFFF;
 $xl-width: 1200px;
 $lg-width: 992px; 
 $md-width: 768px;
+$iPhone-width: 667px; // iPhone 6/7/8(橫)
 $sm-width: 568px; 
 $xs-width: 375px; 

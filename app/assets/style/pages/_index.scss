@@ -7,3 +7,31 @@
     height: 394px;
   }
 }
+
+.classic {
+  &-img {
+    width: 57.72727%;
+    @include iPhone-width {
+      width: 100%;
+      position: relative;
+    }
+  }
+  &-text {
+    width: 42.27272%;
+    padding: 0 30px;
+    @include iPhone-width {
+      position: absolute;
+      padding: 0;
+      filter: brightness(300);
+      width: inherit;
+      transform: translateX(-50%);
+      left: 50%;
+    }
+  }
+  &-icon {
+    margin-right: 8px;
+    @include lg-width {
+      width: 32px;
+    }
+  }
+}

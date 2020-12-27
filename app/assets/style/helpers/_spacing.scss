@@ -1,4 +1,12 @@
-@for $var from 1 through 9 {
+// 客製化
+.mb-subtitle {
+  margin-bottom: 60px;
+  @include md-width {
+    margin-bottom: 32px;
+  }
+}
+
+@for $var from 1 through 10 {
   .mt-#{$var} {
     margin-top: $var * $spacing;
   }
@@ -12,7 +20,56 @@
     margin-left: $var * $spacing;
   }
 }
-@for $var from 1 through 9 {
+
+@for $var from 1 through 10 {
+  .mt-lg-#{$var} {
+    @include lg-width {
+      margin-top: $var * $spacing;
+    }
+  }
+  .mr-lg-#{$var} {
+    @include lg-width {
+      margin-right: $var * $spacing;
+    }
+  }
+  .mb-lg-#{$var} {
+    @include lg-width {
+      margin-bottom: $var * $spacing;
+    }
+  }
+  .ml-lg-#{$var} {
+    @include lg-width {
+      margin-left: $var * $spacing;
+    }
+  }
+}
+
+@for $var from 1 through 10 {
+  .mt-md-#{$var} {
+    @include md-width {
+      margin-top: $var * $spacing;
+    }
+  }
+  .mr-md-#{$var} {
+    @include md-width {
+      margin-right: $var * $spacing;
+    }
+  }
+  .mb-md-#{$var} {
+    @include md-width {
+      margin-bottom: $var * $spacing;
+    }
+  }
+  .ml-md-#{$var} {
+    @include md-width {
+      margin-left: $var * $spacing;
+    }
+  }
+}
+
+
+
+@for $var from 1 through 10 {
   .pt-#{$var} {
     padding-top: $var * $spacing;
   }
@@ -26,3 +83,51 @@
     padding-left: $var * $spacing;
   }
 }
+
+@for $var from 1 through 10 {
+  .pt-md-#{$var} {
+    @include md-width {
+      padding-top: $var * $spacing;
+    }
+  }
+  .pr-md-#{$var} {
+    @include md-width {
+      padding-right: $var * $spacing;
+    }
+  }
+  .pb-md-#{$var} {
+    @include md-width {
+      padding-bottom: $var * $spacing;
+    }
+  }
+  .pl-md-#{$var} {
+    @include md-width {
+      padding-left: $var * $spacing;
+    }
+  }
+}
+
+@for $var from 1 through 10 {
+  .pt-sm-#{$var} {
+    @include sm-width {
+      padding-top: $var * $spacing;
+    }
+  }
+  .pr-sm-#{$var} {
+    @include sm-width {
+      padding-right: $var * $spacing;
+    }
+  }
+  .pb-sm-#{$var} {
+    @include sm-width {
+      padding-bottom: $var * $spacing;
+    }
+  }
+  .pl-sm-#{$var} {
+    @include sm-width {
+      padding-left: $var * $spacing;
+    }
+  }
+}
+
+

@@ -1,15 +1,17 @@
 @import "helpers/variables";
+@import "helpers/mixins";
 @import "base/base";
 
 @import "helpers/utilities";
 @import "helpers/text";
 @import "helpers/spacing";
-@import "helpers/mixins";
 @import "helpers/sizing";
 @import "helpers/hover";
 @import "helpers/background";
 
 @import "layout/footer";
 @import "layout/nav";
+
+@import "components/card";
 
 @import "pages/index";
