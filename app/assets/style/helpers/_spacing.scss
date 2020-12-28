@@ -6,126 +6,151 @@
   }
 }
 
-@for $var from 1 through 10 {
+@for $var from 0 through 10 {
   .mt-#{$var} {
-    margin-top: $var * $spacing;
+    margin-top: $var * $spacing !important;
   }
   .mr-#{$var} {
-    margin-right: $var * $spacing;
+    margin-right: $var * $spacing !important;
   }
   .mb-#{$var} {
-    margin-bottom: $var * $spacing;
+    margin-bottom: $var * $spacing !important;
   }
   .ml-#{$var} {
-    margin-left: $var * $spacing;
+    margin-left: $var * $spacing !important;
   }
 }
 
-@for $var from 1 through 10 {
+@for $var from 0 through 10 {
   .mt-lg-#{$var} {
     @include lg-width {
-      margin-top: $var * $spacing;
+      margin-top: $var * $spacing !important;
     }
   }
   .mr-lg-#{$var} {
     @include lg-width {
-      margin-right: $var * $spacing;
+      margin-right: $var * $spacing !important;
     }
   }
   .mb-lg-#{$var} {
     @include lg-width {
-      margin-bottom: $var * $spacing;
+      margin-bottom: $var * $spacing !important;
     }
   }
   .ml-lg-#{$var} {
     @include lg-width {
-      margin-left: $var * $spacing;
+      margin-left: $var * $spacing !important;
     }
   }
 }
 
-@for $var from 1 through 10 {
+@for $var from 0 through 10 {
   .mt-md-#{$var} {
     @include md-width {
-      margin-top: $var * $spacing;
+      margin-top: $var * $spacing !important;
     }
   }
   .mr-md-#{$var} {
     @include md-width {
-      margin-right: $var * $spacing;
+      margin-right: $var * $spacing !important;
     }
   }
   .mb-md-#{$var} {
     @include md-width {
-      margin-bottom: $var * $spacing;
+      margin-bottom: $var * $spacing !important;
     }
   }
   .ml-md-#{$var} {
     @include md-width {
-      margin-left: $var * $spacing;
+      margin-left: $var * $spacing !important;
+    }
+  }
+}
+
+@for $var from 0 through 10 {
+  .mt-sm-#{$var} {
+    @include sm-width {
+      margin-top: $var * $spacing !important;
+    }
+  }
+  .mr-sm-#{$var} {
+    @include sm-width {
+      margin-right: $var * $spacing !important;
+    }
+  }
+  .mb-sm-#{$var} {
+    @include sm-width {
+      margin-bottom: $var * $spacing !important;
+    }
+  }
+  .ml-sm-#{$var} {
+    @include sm-width {
+      margin-left: $var * $spacing !important;
     }
   }
 }
 
 
-
-@for $var from 1 through 10 {
+@for $var from 0 through 10 {
+  .p-#{$var} {
+    padding:  $var * $spacing !important;
+  }
   .pt-#{$var} {
-    padding-top: $var * $spacing;
+    padding-top: $var * $spacing !important;
   }
   .pr-#{$var} {
-    padding-right: $var * $spacing;
+    padding-right: $var * $spacing !important;
   }
   .pb-#{$var} {
-    padding-bottom: $var * $spacing;
+    padding-bottom: $var * $spacing !important;
   }
   .pl-#{$var} {
-    padding-left: $var * $spacing;
+    padding-left: $var * $spacing !important;
   }
 }
 
-@for $var from 1 through 10 {
+@for $var from 0 through 10 {
   .pt-md-#{$var} {
     @include md-width {
-      padding-top: $var * $spacing;
+      padding-top: $var * $spacing !important;
     }
   }
   .pr-md-#{$var} {
     @include md-width {
-      padding-right: $var * $spacing;
+      padding-right: $var * $spacing !important;
     }
   }
   .pb-md-#{$var} {
     @include md-width {
-      padding-bottom: $var * $spacing;
+      padding-bottom: $var * $spacing !important;
     }
   }
   .pl-md-#{$var} {
     @include md-width {
-      padding-left: $var * $spacing;
+      padding-left: $var * $spacing !important;
     }
   }
 }
 
-@for $var from 1 through 10 {
+@for $var from 0 through 10 {
   .pt-sm-#{$var} {
     @include sm-width {
-      padding-top: $var * $spacing;
+      padding-top: $var * $spacing !important;
     }
   }
   .pr-sm-#{$var} {
     @include sm-width {
-      padding-right: $var * $spacing;
+      padding-right: $var * $spacing !important;
     }
   }
   .pb-sm-#{$var} {
     @include sm-width {
-      padding-bottom: $var * $spacing;
+      padding-bottom: $var * $spacing !important;
     }
   }
   .pl-sm-#{$var} {
     @include sm-width {
-      padding-left: $var * $spacing;
+      padding-left: $var * $spacing !important;
     }
   }
 }

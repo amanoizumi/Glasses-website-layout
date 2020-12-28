@@ -9,6 +9,8 @@
 }
 
 
+
+
 /* display */
 .d-block {
   display: block;
@@ -100,9 +102,20 @@
   align-items: baseline;
 }
 
+
 /* order */
 .lg-order-first {
   @include lg-width {
     order: -1;
+  }
+}
+
+/* border */
+.border {
+  &-0 {
+    border: 0 !important;
+  }
+  &-bottom-0 {
+    border-bottom: 0 !important;
   }
 }

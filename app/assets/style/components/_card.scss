@@ -1,33 +1,44 @@
 .card{
-  &-deck{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-  }
   display: flex;
   flex-direction: column;
-  width: 25%;
+  width: 22.369%;
   @include lg-width {
-    width: 50%;
+    width: 48.6%;
+    margin-bottom: 24px;
   }
-  @include md-width {
+  @include xs-width {
     width: 100%;
   }
-  padding: 0 38px;
-  // &-header{
-
-  // }
-  &-img {
-    vertical-align: baseline;
+  &-deck{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    @include lg-width {
+      flex-wrap: wrap;
+    }
   }
-  // &-body{
 
-  // }
   &-title{
-    font-size: $fsz-xl;
-    margin-bottom: 4px;
+    padding-top: 14px;
+    margin-bottom: 8px;
   }
-  // &-text{
+  &-body {
+    border-right: 1px solid #DEE2E6;
+    border-bottom: 1px solid #DEE2E6;
+    border-left: 1px solid #DEE2E6;
+    padding: 0px 16px 10px 16px;
+  }
+  &-image {
+    // 響應式圖片
+    @include img-responsive;
+  }
 
-  // }
+  &-footer {
+    color: $gray-300; // #707070
+    border-right: 1px solid #DEE2E6;
+    border-bottom: 1px solid #DEE2E6;
+    border-left: 1px solid #DEE2E6;
+    padding-bottom: 15px;
+    padding-left: 16px;
+  }
  }

@@ -7,7 +7,14 @@
     height: 394px;
   }
 }
-
+.index-box {
+  @include lg-width {
+    padding: 0 47px;
+  }
+  @include xs-width {
+    padding: 0 54px;
+  }
+}
 .classic {
   &-img {
     width: 57.72727%;
@@ -32,6 +39,30 @@
     margin-right: 8px;
     @include lg-width {
       width: 32px;
+    }
+  }
+}
+.cobranding {
+  background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true');
+  @include bg-cover;
+  &-item {
+    @include bg-cover;
+    width: 48.64864%;
+    @include sm-width {
+      width: 100%;
+    }
+  }
+  &-text {
+    padding: 33.7% 0;
+    font-size: 72px;
+    background: rgba(255, 255, 255, 0.5);
+    transition: .5s;
+    @include lg-width {
+      font-size: 32px;
+    }
+    &:hover {
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.0);
     }
   }
 }
