@@ -70,6 +70,21 @@ a {
   text-decoration: none;
 }
 
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  @include md-width {
+    font-size: 0.875rem;
+  }
+}
+
+textarea {
+  resize: none;
+  min-height: 136px;
+  @include md-width {
+    min-height: 100px;
+  }
+}
 h1, .fsz-4xl {
   font-size: $fsz-4xl; // 64
 }
@@ -78,6 +93,12 @@ h2, .fsz-3xl {
 }
 h3, .fsz-xxl {
   font-size: $fsz-xxl; // 36
+}
+.fsz-mm {
+  font-size: $fsz-mm; // 32
+}
+.fsz-ss {
+  font-size: $fsz-ss; // 28
 }
 h4, .fsz-xl {
   font-size: $fsz-xl; //24
@@ -101,9 +122,9 @@ h6, .fsz-m {
       font-size: $fsz-3xl; // 48
     };
   }
-  &-28 {
+  &-ss {
     @include lg-width {
-      font-size: 28px; // 客製化
+      font-size: $fsz-ss; // 28
     };
   }
   &-l {
@@ -120,9 +141,9 @@ h6, .fsz-m {
       font-size: $fsz-3xl; // 48
     };
   }
-  &-32 {
+  &-mm {
     @include md-width {
-      font-size: 32px; // 客製化 32px
+      font-size: $fsz-mm; // 32
     };
   }
   &-l {
@@ -140,21 +161,31 @@ h6, .fsz-m {
 
 // font size sm
 .fsz-sm {
-  &-32 {
+
+  &-mm {
     @include sm-width {
-      font-size: 32px; // 客製化 32px
+      font-size: $fsz-mm; //32
     };
   }
+
+  &-ss {
+    @include sm-width {
+      font-size: $fsz-ss; //28
+    };
+  }
+
   &-xl {
     @include sm-width {
       font-size: $fsz-xl; // 24
     };
   }
+  
   &-m {
     @include sm-width {
       font-size: $fsz-m; // 16
     };
   }
+  
   &-s {
     @include sm-width {
       font-size: $fsz-s; // 14
@@ -162,8 +193,6 @@ h6, .fsz-m {
   }
 }
 
-
-// font size sm
 
 /*
 1. container 寫在全站設定

@@ -1,0 +1,25 @@
+.btn {
+  font-size: 1rem;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  background-color: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  &:hover {
+    filter: grayscale(50%);
+  }
+  &-primary {
+    background: $primary;
+  }
+  &-lg {
+    padding: 16px 143px;
+    @include md-width {
+      padding: 8px 76px;
+    }
+    @include sm-width {
+      padding: 8px 54.5px;
+    }
+  }
+
+}

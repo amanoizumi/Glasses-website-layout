@@ -1,0 +1,22 @@
+.faq-header {
+  height: 304px;
+  background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/qa.png?raw=true');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  @include sm-width {
+    height: 143px;
+  }
+}
+
+.icon-help {
+  @include md-width {
+    width: 48px;
+    height: 48px;
+  }
+  @include sm-width {
+    width: 24px;
+    height: 24px;
+  }
+}

@@ -90,7 +90,6 @@
   }
 }
 
-
 @for $var from 0 through 10 {
   .p-#{$var} {
     padding:  $var * $spacing !important;
