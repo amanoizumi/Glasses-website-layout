@@ -20,3 +20,24 @@
     height: 24px;
   }
 }
+.faq-main {
+  padding-bottom: 209px;
+  @include md-width {
+    padding-bottom: 64px;
+  }
+}
+.faq-subtitle {
+  margin-bottom: 36px;
+  @include sm-width {
+    margin-bottom: 12px;
+  }
+}
+.faq-content {
+  margin-left: 95px;
+  @include md-width {
+    margin-left: 60px;
+  }
+  @include sm-width {
+    margin-left: 0px;
+  }
+}

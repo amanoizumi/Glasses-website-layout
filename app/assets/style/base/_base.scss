@@ -161,13 +161,11 @@ h6, .fsz-m {
 
 // font size sm
 .fsz-sm {
-
   &-mm {
     @include sm-width {
       font-size: $fsz-mm; //32
     };
   }
-
   &-ss {
     @include sm-width {
       font-size: $fsz-ss; //28
@@ -206,7 +204,7 @@ h6, .fsz-m {
   margin: 0 auto;
   @include lg-width {
     max-width: 100%;
-    padding: 0 39px;
+    padding: 0 40px;
   }
   @include sm-width {
     padding: 0 15px;
