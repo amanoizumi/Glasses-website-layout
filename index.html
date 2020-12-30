@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,22 +9,33 @@
 </head>
 
 <body>
+  <!-- layout navbar 開始 -->
   <nav class="navbar bg-primary">
-    <a class="navbar-logo" href="index.html">
-      <h1 class="logo"
-          style="background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png');">
-          Glasses
-      </h1>
+    <h1 class="logo"
+    style="background-image: url('https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week3/logo.png');">
+    <a class="navbar-logo" href="index.html"></a>
+      Glasses
     </a>
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item"><a class="nav-link hvr-underline-from-center" href="frames.html">系列鏡框</a></li>
-      <li class="nav-item"><a class="nav-link hvr-underline-from-center" href="address.html">門市據點</a></li>
-      <li class="nav-item"><a class="nav-link hvr-underline-from-center" href="blog.html">部落格</a></li>
-      <li class="nav-item"><a class="nav-link hvr-underline-from-center" href="faq.html">常見問題</a></li>
-    </ul>
+  </h1>
+  <ul class="navbar-nav ml-auto">
+    <li class="nav-item"><a class="nav-link hvr-underline-from-center" href="frames.html">系列鏡框</a></li>
+    <li class="nav-item"><a class="nav-link hvr-underline-from-center" href="address.html">門市據點</a></li>
+    <li class="nav-item"><a class="nav-link hvr-underline-from-center" href="blog.html">部落格</a></li>
+    <li class="nav-item"><a class="nav-link hvr-underline-from-center" href="faq.html">常見問題</a></li>
+  </ul>
   </nav>
-
-  <!-- header 開始 -->
+  <!-- layout navbar 結束 -->
+  <!-- 
+助教回饋
+index.html
+1. .logo 建議改用 h1>a 的方式設計，以利 SEO 搜尋排名 √
+2. 標題標籤不建議跳著使用，依照重要程度順序使用即可 √
+3. "聯名設計鏡框" 的內容也可用 ul li 結構 √
+4. .form-description 可直接併入 p 標籤內 √
+5. 確認送出紐可直接賦予一個寬度 √
+6. footer 選單部分也可加上 hover 效果
+-->
+<!-- header 開始 -->
 <section class="header">
   <div class="container h-100 d-flex flex-column justify-content-center text-right text-dark">
     <p class="fsz-xxl fsz-lg-l fsz-sm-m">Promise-Desert 2020 早春系列</p>
@@ -44,28 +54,28 @@
       <li class="card mb-lg-5">
         <img class="mb-5" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/13f2e6e6b718b6abafb62ce7a672d42fc39eaeae/week3/icon-dollar.svg" alt="">
         <div class="index-box">
-          <h4 class="card-title text-dark font-weight-bold text-center">單一價格</h4>
+          <h3 class="card-title text-dark font-weight-bold text-center fsz-xl fsz-md-l fsz-sm-xl">單一價格</h3>
           <p class="card-text font-weight-bold mb-0">無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
         </div>
       </li>
       <li class="card mb-lg-5 lg-order-first">
         <img class="mb-5" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/13f2e6e6b718b6abafb62ce7a672d42fc39eaeae/week3/icon-clock.svg" alt="">
         <div class="index-box">
-          <h4 class="card-title text-dark font-weight-bold text-center">20 分鐘即可取件</h4>
+          <h3 class="card-title text-dark font-weight-bold text-center fsz-xl fsz-md-l fsz-sm-xl">20 分鐘即可取件</h3>
           <p class="card-text font-weight-bold mb-0">為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘 即可完成。</p>
         </div>
       </li>
       <li class="card mb-lg-5 lg-order-first">
         <img class="mb-5" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/13f2e6e6b718b6abafb62ce7a672d42fc39eaeae/week3/icon-heart.svg" alt="">
         <div class="index-box">
-          <h4 class="card-title text-dark font-weight-bold text-center">安心售後服務</h4>
+          <h3 class="card-title text-dark font-weight-bold text-center fsz-xl fsz-md-l fsz-sm-xl">安心售後服務</h3>
           <p class="card-text font-weight-bold mb-0">我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
         </div>
       </li>
       <li class="card">
         <img class="mb-5" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/13f2e6e6b718b6abafb62ce7a672d42fc39eaeae/week3/icon-glasses.svg" alt="">
         <div class="index-box">
-          <h4 class="card-title text-dark font-weight-bold text-center">關於鏡片</h4>
+          <h3 class="card-title text-dark font-weight-bold text-center fsz-xl fsz-md-l fsz-sm-xl">關於鏡片</h3>
           <p class="card-text font-weight-bold mb-0">使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
         </div>
       </li>
@@ -83,21 +93,21 @@
         <img class="classic-img" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-1.png?raw=true" alt="">
         <div class="classic-text d-flex">
           <img class="classic-icon" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/13f2e6e6b718b6abafb62ce7a672d42fc39eaeae/week3/icon-diamond.svg" alt="">
-          <h2 class="text-primary text-italic font-weight-black fsz-lg-ss">OPTICAL</h2>
+          <h3 class="text-primary text-italic font-weight-black fsz-3xl fsz-lg-ss">OPTICAL</h3>
         </div>
       </li>
       <li class="d-flex align-items-center flex-row-reverse flex-md-row mb-4 mb-md-1">
         <img class="classic-img" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-2.png?raw=true" alt="">
         <div class="classic-text d-flex justify-content-end justify-content-md-start">
           <img class="classic-icon" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/13f2e6e6b718b6abafb62ce7a672d42fc39eaeae/week3/icon-sun.svg" alt="">
-          <h2 class="text-primary text-italic font-weight-black fsz-lg-ss">SUNGLASSES</h2>
+          <h3 class="text-primary text-italic font-weight-black fsz-3xl fsz-lg-ss">SUNGLASSES</h3>
         </div>
       </li>
       <li class="d-flex align-items-center">
         <img class="classic-img" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-3.png?raw=true" alt="">
         <div class="classic-text d-flex">
           <img class="classic-icon" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/13f2e6e6b718b6abafb62ce7a672d42fc39eaeae/week3/icon-thunder.svg" alt="">
-          <h2 class="text-primary text-italic font-weight-black fsz-lg-ss">FUNCTIONAL</h2>
+          <h3 class="text-primary text-italic font-weight-black fsz-3xl fsz-lg-ss">FUNCTIONAL</h3>
         </div>
       </li>
     </ul>
@@ -109,18 +119,18 @@
 <section class="cobranding pt-8 pt-md-5 pt-sm-4 pb-10 pb-md-5 pb-sm-4">
   <div class="container">
     <h2 class="text-center font-weight-bold fsz-md-mm fsz-sm-xl text-light mb-subtitle">聯名設計鏡框</h2>
-    <div class="d-flex justify-space-between flex-wrap">
-      <div class="cobranding-item mb-sm-2"
+    <ul class="d-flex justify-space-between flex-wrap">
+      <li class="cobranding-item mb-sm-2"
            style="background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-8.png?raw=true');
                   ">
         <a href="#" class="cobranding-text font-weight-bold text-center text-primary">Double A+</a>
-      </div>
-      <div class="cobranding-item"
+      </li>
+      <li class="cobranding-item"
            style="background-image: url('https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-9.png?raw=true');
                   ">
         <a href="#" class="cobranding-text font-weight-bold text-center text-primary">YOUTH</a>
-      </div>
-    </div>
+      </li>
+    </ul>
   </div>
 </section>
 <!-- 聯名區塊結束 -->
@@ -133,7 +143,7 @@
       <li class="card">
         <img class="card-image" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/rec-1.png?raw=true" alt="">
         <div class="card-body border-bottom-0">
-          <h4 class="card-title fsz-s font-weight-medium">Jessy</h4>
+          <h3 class="card-title fsz-s font-weight-medium fsz-xl">Jessy</h3>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
         <div class="card-footer">
@@ -143,7 +153,7 @@
       <li class="card">
         <img class="card-image" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/rec-2.png?raw=true" alt="">
         <div class="card-body border-bottom-0">
-          <h4 class="card-title fsz-s font-weight-medium">Karen</h4>
+          <h3 class="card-title fsz-s font-weight-medium fsz-xl">Karen</h3>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
         <div class="card-footer">
@@ -153,7 +163,7 @@
       <li class="card">
         <img class="card-image" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/rec-3.png?raw=true" alt="">
         <div class="card-body border-bottom-0">
-          <h4 class="card-title fsz-s font-weight-medium">Chelsea</h4>
+          <h3 class="card-title fsz-s font-weight-medium fsz-xl">Chelsea</h3>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
         <div class="card-footer">
@@ -163,7 +173,7 @@
       <li class="card mb-sm-0">
         <img class="card-image" src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/rec-4.png?raw=true" alt="">
         <div class="card-body border-bottom-0">
-          <h4 class="card-title fsz-s font-weight-medium">Jane</h4>
+          <h3 class="card-title fsz-s font-weight-medium fsz-xl">Jane</h3>
           <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
         <div class="card-footer">
@@ -179,9 +189,7 @@
 <section class="bg-light pt-8 pt-md-5 pt-sm-4 pb-10 pb-md-5 pb-sm-4">
   <div class="form-container">
     <h2 class="text-center font-weight-bold fsz-md-mm fsz-sm-xl mb-3">聯絡我們</h2>
-    <div class="form-description">
-      <p class="fsz-l">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
-    </div>
+    <p class="form-description fsz-l">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
     <form>
       <div class="form-group">
         <label for="myName">姓名</label>
@@ -213,17 +221,17 @@
   </div>
 </section>
 <!-- 聯絡區塊結束 -->
-
+  <!-- footer 開始 -->
   <footer class="footer bg-primary">
     <div class="container">
       <div class="d-md-flex flex-md-row-reverse justify-md-space-between">
         <div class="d-flex mb-4 justify-space-between">
           <ul class="nav">
-            <li class="nav-item mr-6"><a class="nav-link" href="index.html">首頁</a></li>
-            <li class="nav-item mr-6"><a class="nav-link" href="frames.html">系列鏡框</a></li>
-            <li class="nav-item mr-6"><a class="nav-link" href="address.html">門市據點</a></li>
-            <li class="nav-item mr-6"><a class="nav-link" href="blog.html">部落格</a></li>
-            <li class="nav-item"><a class="nav-link" href="faq.html">常見問題</a></li>
+            <li class="nav-item mr-6 hvr-pulse"><a class="nav-link" href="index.html">首頁</a></li>
+            <li class="nav-item mr-6 hvr-pulse"><a class="nav-link" href="frames.html">系列鏡框</a></li>
+            <li class="nav-item mr-6 hvr-pulse"><a class="nav-link" href="address.html">門市據點</a></li>
+            <li class="nav-item mr-6 hvr-pulse"><a class="nav-link" href="blog.html">部落格</a></li>
+            <li class="nav-item hvr-pulse"><a class="nav-link" href="faq.html">常見問題</a></li>
           </ul>
           <ul class="d-flex">
             <li class="mr-4">
@@ -279,8 +287,7 @@
       </div>
     </div>
   </footer>
-
+  <!-- footer 結束 -->
   <script src="./assets/js/all.js"></script>
 </body>
-
 </html>
