@@ -13,12 +13,15 @@
     background: $primary;
   }
   &-lg {
-    padding: 16px 143px;
+    padding: 16px 0px;
+    width: 350px;
     @include md-width {
-      padding: 8px 76px;
+      padding: 8px 0px;
+      width: 210px;
     }
     @include sm-width {
-      padding: 8px 54.5px;
+      padding: 8px 0px;
+      width: 120px;
     }
   }
 
